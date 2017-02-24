@@ -7,6 +7,7 @@ var flash = require('connect-flash');
 var passport = require('passport');
 var mongoose = require('mongoose'); 
 var MongoStore = require('connect-mongo')(session);
+var port = process.env.PORT || 3000;
 var app = express();
 
 mongoose.connect('mongodb://portfolio:12345@ds017246.mlab.com:17246/portfolio', function(err){
@@ -47,5 +48,5 @@ app.use('/users', users);
 
 
 
-var port = (process.env.PORT || 3000);
+
 app.listen(port);
