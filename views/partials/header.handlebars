@@ -1,0 +1,15 @@
+ <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/users">Home</a></li>
+            <li role="presentation" class="active"><a href="/users/signup">signup</a></li>
+            {{#if user}}
+            <li role="presentation" class="active"><a href="/users/profile">{{this.user}}</a></li>
+            <li role="presentation" class="active"><a href="/users/logout">logout</a></li>
+            {{else}}
+            <li role="presentation" class="active"><a href="/users/login">login</a></li>
+            {{/if}}
+          </ul>
+        </nav>
+        <h3 class="text-muted">Project name</h3>
+ </div>

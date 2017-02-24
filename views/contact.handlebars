@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Rubel Miah">
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="http://demo.shapedtheme.com/kotha-pro-html//images/">
+
+    <title>Kotha pro</title>
+
+    <!-- common css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.css">
+    <link rel="stylesheet" href="/css/owl.transitions.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/respond.js"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+<body>
+<nav class="navbar main-menu navbar-default">
+    <div class="container">
+        <div class="menu-content">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="/images/logo.png" alt=""></a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav text-uppercase">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT ME </a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+                <div class="i_con">
+                    <a href="blog.html#"><i class="active fa fa-twitter"></i></a>
+                    <a href="blog.html#"><i class="fa fa-facebook"></i></a>
+                    <a href="blog.html#"><i class="fa fa-linkedin"></i></a>
+                    <a href="blog.html#"><i class="fa fa-google-plus"></i></a>
+                    <a href="blog.html#"><i class="fa fa-instagram"></i></a>
+                    <a href="blog.html#"><i class="fa fa-heart"></i></a>
+
+                    <div class="top-search">
+                        <a href="blog.html#"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.navbar-collapse -->
+
+
+            <div class="show-search">
+                <form role="search" method="get" id="searchform" action="blog.html#">
+                    <div>
+                        <input type="text" placeholder="Search and hit enter..." name="s" id="s">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!--main content start-->
+<div class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+                <div class="leave-comment mr0"><!--leave comment-->
+                    <div id="googleMap" style="width:100%; height:380px; margin-bottom: 40px"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam deserunt esse
+                        fugit iste magnam, neque nesciunt nihil possimus ratione repellendus veniam vero. Accusamus
+                        deleniti deserunt esse illo recusandae.</p>
+
+                    <h3 class="text-uppercase">Send massage</h3>
+                    <br>
+
+                    <form class="form-horizontal contact-form" role="form" method="post" action="http://demo.shapedtheme.com/kotha-pro-html/sendemail.php">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="name" name="name"
+                                       placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="email" class="form-control" id="email" name="email"
+                                       placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                       placeholder="Subject">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+										<textarea class="form-control" rows="6" name="message"
+                                                  placeholder="Write Massage" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" name="submit" class="btn send-btn">send massage</button>
+
+                    </form>
+                </div><!--end leave comment-->
+            </div>
+            <div class="col-md-4" data-sticky_column>
+                <div class="primary-sidebar">
+
+                    <aside class="widget news-letter">
+                        <h3 class="widget-title text-uppercase text-center">Get Newsletter</h3>
+                        <form action="blog.html" id="form_subscribe_email" method="post">
+                            <input type="email" placeholder="Your email address" id="emailSubVal">
+                            <input type="button" value="Subscribe Now"
+                                   class="text-uppercase text-center btn btn-subscribe" id="subscribe_email">
+                        </form>
+                    </aside>
+
+               <aside class="widget pos-padding">
+                        <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
+                             {{#if recentPosts}}
+                                  {{#each recentPosts}}
+                                      <div class="thumb-latest-posts">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="home-2.html#" class="popular-img"><img src="/images/r-p.jpg" alt="">
+                                                    <div class="p-overlay"></div>
+                                                </a>
+                                            </div>
+                                            <div class="p-content">
+                                     <a href="/post/{{this._id}}" class="text-uppercase">{{this.postTitle}}</a>
+                                                <span class="p-date">February 15, 2016</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  {{/each}}
+                             {{/if}}
+                    </aside>
+                </div></div>
+        </div>
+    </div>
+</div>
+<!-- end main content-->
+<!--footer start-->
+<footer class="footer-widget-section">
+    <div class="container">
+
+    <div class="footer-copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">&copy; 2015 <a href="blog.html">Kotha PRO</a>,Designed with <i
+                            class="fa fa-heart"></i>
+                        by <a href="blog.html#">ShapedTheme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- js files -->
+<!-- js files -->
+<!-- js files -->
+<!-- js files -->
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/js/jquery.stickit.min.js"></script>
+<script type="text/javascript" src="/js/map.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript">
+    /* ==== google map ====*/
+    function initialize() {
+        var mapOptions = {
+            zoom: 14,
+            center: new google.maps.LatLng(12.936176, 77.628599),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false
+        };
+
+        var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(12.936176, 77.628599),
+        });
+
+        marker.setMap(map);
+        var infowindow = new google.maps.InfoWindow({
+            content: "Our location!"
+        });
+        
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/scripts.js"></script>
+</body>
+</html>
